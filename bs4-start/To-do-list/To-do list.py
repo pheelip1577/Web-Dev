@@ -1,6 +1,3 @@
-from flask import Flask, render_template, request
-
-app = Flask(__name__)
 
 # Your existing functions (add_task, complete_task, remove_task, etc.)
 
