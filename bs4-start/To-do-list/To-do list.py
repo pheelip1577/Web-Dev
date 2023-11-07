@@ -3,22 +3,6 @@
 
 @app.route('/', methods=['GET', 'POST'])
 
-def index():
-    global tasks  # Use the global tasks variable
-    if request.method == 'POST':
-        task_description = request.form['task']
-        tasks.append({"description": task_description, "completed": False})
-    return render_template('index.html', tasks=tasks)
-
-
-def main():
-    global tasks
-    tasks = load_tasks()
-
-    # The rest of your main program logic
-
-if __name__ == '__main__':
-    app.run(debug=True)
 
 import pickle
 print("*******WELCOME TO YOUR TO-DO LIST*******")
