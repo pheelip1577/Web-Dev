@@ -1,8 +1,4 @@
 
-# Your existing functions (add_task, complete_task, remove_task, etc.)
-
-@app.route('/', methods=['GET', 'POST'])
-
 
 import pickle
 print("*******WELCOME TO YOUR TO-DO LIST*******")
